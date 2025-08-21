@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Benjamin Standford - Actor - Home</title>
+        <script>
+            var op = 0.1;
+            var fading = true;
+            function fade() {
+                if (fading == true) {
+                    fadeIn();
+                }
+                else {
+                    fadeOut();
+                }
+            }
+
+            function fadeIn() {
+                op += 0.1;
+                document.getElementById("home-btn").style.opacity = op;
+                if (op > 1) {
+                    fading = false;
+                }
+            }
+
+            function fadeOut() {
+                op -= 0.1;
+                document.getElementById("home-btn").style.opacity = op;
+                if (op < 0.5) {
+                    fading = true;
+                }
+            }
+        </script>
+    </head>
+    <body id="homepage" onload="setInterval(fade, 200)">
+        <button id="home-btn" onclick="location.href='about.html'">ENTER</button>
+        <footer class="footer">
+            <span>Author: Benjamin Standford | Copyright &#169; 2022</span>
+        </footer>
+    </body>
+</html>

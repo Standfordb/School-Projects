@@ -1,0 +1,128 @@
+body {
+    background-color: #301f15;
+    color: #ab755d;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-top: 100px;
+    width: 25%;
+    text-align: left;
+}
+
+#actor {
+    padding-left: 20px;
+    padding-top: 0px;
+    width: 25%;
+    text-align: left;
+    border-top: 2px solid;
+}
+
+h2 {
+    padding-left: 20px;
+}
+
+.hero-photo1 {
+    margin: auto;
+    height: 650px;
+    background-image: url("/images/headshot1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-photo2 {
+    float: right;
+    height: 500px;
+    width: 300px;
+    background-image: url("/images/headshot3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#info1 {
+    float: left;
+    width: 65%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.centered {
+    margin: auto;
+}
+
+.bordered {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+.videodiv {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.videotable {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.videosize {
+    width: 320px;
+    height: 240px;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #301f15;
+}
+
+.top-list {
+    position: fixed;
+    top: 0;
+    background-color: #301f15;
+}
+
+#audio-padding {
+    padding-bottom: 100px;
+    padding-left: 50px;
+}
+
+#homepage {
+    height: 100vh;
+    margin: auto;
+    background-image: url("/images/headshot1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 75vh;
+}
+
+#home-btn {
+    background: #222222;
+    opacity: 0.1;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 20px;
+    height: 80px;
+    width: 240px;
+    line-height: 60px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.col1 {
+    width: 10%;
+}
+
+.col2 {
+    width: 30%;
+}

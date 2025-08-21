@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It is the slowest of the 3 sorting algorithms by a noticeable margin.
+
+sort2 uses: Merge Sort
+
+How do you know?: It is significantly faster than the others on a both a reversed and a random set of numbers.
+
+sort3 uses: Selection Sort
+
+How do you know?: It is slower in general than the Merge Sort but performs noticeably better than the Bubble Sort.

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body1 %}
+<h2>Edit a Birthday</h2>
+<!-- TODO: Create a form for users to edit a name, a month, and a day -->
+    <form action="/edit" method="POST">
+        <input autocomplete="off" autofocus name="name" placeholder="{{ person.name }}" type="text" required>
+        <input autocomplete="off" name="month" placeholder="{{ person.month }}" type="number" min="1" max="12" required>
+        <input autocomplete="off" name="day" placeholder="{{ person.day }}" type="number" min="1" max="31" required>
+        <input type="hidden" name="id" value="{{ person.id }}">
+        <input name="submit" type="submit">
+    </form>
+{% endblock %}
